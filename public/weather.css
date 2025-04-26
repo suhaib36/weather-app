@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+}
+
+.weather-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Pop-up effect on hover */
+.weather-container:hover {
+    transform: scale(1.05);
+}
+
+/* Stylish heading */
+h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #ff8a00, #da1b60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* Input & Button */
+input, button {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+button {
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 138, 0, 0.5);
+}
+
+/* Weather Info */
+.weather-info {
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Weather info pop-up effect */
+.weather-info:hover {
+    transform: scale(1.1);
+}
+
+/* Error Message */
+.error {
+    color: #ff4c4c;
+}
+
+/* 3D Canvas Background */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
